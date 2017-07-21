@@ -485,6 +485,82 @@ Parameters::
 
     ** int nVirtKey key_code
 
+GetWindowLongA
+==============
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
+Parameters::
+
+    ** HWND hWnd window_handle
+    *  INT nIndex index
+
+Logging::
+
+    p window_handle hWnd
+    i index nIndex
+
+GetWindowLongW
+==============
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
+Parameters::
+
+    ** HWND hWnd window_handle
+    *  INT nIndex index
+
+Logging::
+
+    p window_handle hWnd
+    i index nIndex
+
+SetWindowLongW
+==============
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
+Parameters::
+
+    ** HWND hWnd window_handle
+    *  INT nIndex index
+    *  LONG dwNewLong value
+
+Logging::
+
+    p window_handle hWnd
+    i index nIndex
+    l value dwNewLong
+
+SetWindowLongA
+==============
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
+Parameters::
+
+    ** HWND hWnd window_handle
+    *  INT nIndex index
+    *  LONG dwNewLong value
+
+Logging::
+
+    p window_handle hWnd
+    i index nIndex
+    l value dwNewLong
+
 
 SendNotifyMessageA
 ==================
