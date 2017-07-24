@@ -600,6 +600,20 @@ Parameters::
     *  INT nIndex index
     *  LONG dwNewLong value
 
+Pre::
+
+    uint32_t pid = 0, tid;
+
+    tid = get_window_thread_process_id(hWnd, &pid);
+    if (tid != get_current_process_id()) {
+        char classname[1024];
+
+        GetClassName(hWnd, classname, sizeof(classname));
+        if (!stricmp(classname, "Shell_TrayWnd") && nIndex == 0) {
+            pipe("PROCESS:%d,%d,%d", pid, tid, HOOK_MODE_ALL);
+        }
+    }
+
 Logging::
 
     p window_handle hWnd
