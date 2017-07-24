@@ -485,6 +485,51 @@ Parameters::
 
     ** int nVirtKey key_code
 
+SystemParametersInfoW
+=====================
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
+Parameters::
+
+    * UINT uiAction
+    * UINT uiParam
+    * PVOID pvParam
+    * UINT fWinIni
+
+Logging::
+
+    i action uiAction
+    i ui_param uiParam
+    p param pvParam
+    i win_ini fWinIni
+
+SystemParametersInfoA
+=====================
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
+Parameters::
+
+    * UINT uiAction
+    * UINT uiParam
+    * PVOID pvParam
+    * UINT fWinIni
+
+Logging::
+
+    i action uiAction
+    i ui_param uiParam
+    p param pvParam
+    i win_ini fWinIni
+
+
 GetWindowLongA
 ==============
 
