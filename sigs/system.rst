@@ -3,6 +3,61 @@ Signature::
     * Calling convention: WINAPI
     * Category: system
 
+GetClipboardData
+=================
+
+Signature::
+
+    * Library: user32
+    * Return value: HANDLE
+
+Parameters::
+
+    ** UINT uFormat format
+
+
+SetClipboardData
+=================
+
+Signature::
+
+    * Library: user32
+    * Return value: HANDLE
+
+Parameters::
+
+    ** UINT uFormat format
+    ** HANDLE hMem data
+
+OpenClipboard
+=================
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
+Parameters::
+
+    ** HWND hWnd window_handle
+
+CloseClipboard
+=================
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
+
+EmptyClipboard
+=================
+
+Signature::
+
+    * Library: user32
+    * Return value: BOOL
+
 
 SetWindowsHookExA
 =================
